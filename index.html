@@ -5,14 +5,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TOP Calculator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
-    <div id="wrapper">
-
+    <div id="wrapper" class="section">
+        <div id="calculator" class="container">
+            <div id="displayBackground">
+                <p id="display">0</p>
+            </div>
+            <div id="buttonsClear">
+                <button class="button" id="delete">Del</button>
+                <button class="button" id="clear">Clear</button>
+            </div>
+            <div id="buttonsMain">
+                <button class="button numBtn" value="7">7</button>
+                <button class="button numBtn" value="8">8</button>
+                <button class="button numBtn" value="9">9</button>
+                <button class="button operatorBtn" value="divide">/</button>
+                <button class="button numBtn" value="4">4</button>
+                <button class="button numBtn" value="5">5</button>
+                <button class="button numBtn" value="6">6</button>
+                <button class="button operatorBtn" value="multiply">*</button>
+                <button class="button numBtn" value="1">1</button>
+                <button class="button numBtn" value="2">2</button>
+                <button class="button numBtn" value="3">3</button>
+                <button class="button operatorBtn" value="subtract">-</button>
+                <button class="button numBtn" value=".">.</button>
+                <button class="button numBtn" value="0">0</button>
+                <button class="button operatorBtn" value="=">=</button>
+                <button class="button operatorBtn" value="add">+</button>
+            </div>
+        </div>
     </div>
     <script src="app.js"></script>
 </body>

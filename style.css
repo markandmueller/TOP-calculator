@@ -2,3 +2,32 @@
     background-color: lightblue;
     box-sizing: border-box;
 }
+
+#calculator {
+    background-color: coral;
+    width: 300px;
+}
+
+#displayBackground {
+    background-color: darkgrey;
+    padding: 10px 20px 30px 40px;
+}
+
+#display {
+    font-size: 24px;
+    color: black;
+}
+
+#buttonsMain {
+    background-color: blue;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 60px);
+}
+
+#buttonsClear {
+    background-color: blue;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 60px);
+}

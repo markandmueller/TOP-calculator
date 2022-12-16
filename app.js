@@ -1,8 +1,29 @@
-function test() {
-    console.log('test worked');
-}
+let numDisplay = 0;
+let operator = null;
+let a = null;
+let b = null;
 
-// test();
+const del = document.querySelector("#delete");
+const clear = document.querySelector("#clear");
+const display = document.querySelector("#display");
+const buttonsMain = document.querySelector("#buttonsMain");
+
+const operatorBtn = buttonsMain.querySelectorAll(".operatorBtn");
+operatorBtn.forEach((operatorBtn) => {
+    operatorBtn.addEventListener('click', function () {
+        // console.log('ya boi');
+    });
+});
+
+const numBtn = buttonsMain.querySelectorAll(".numBtn");
+numBtn.forEach((numBtn) => {
+    numBtn.addEventListener('click', populateDisplay);
+});
+
+function populateDisplay() {
+    numDisplay = this.value;
+    display.textContent = this.value;
+}
 
 function add(a, b) {
     let addResult = a + b;
@@ -36,10 +57,18 @@ function operate(operator, a, b) {
     }
     else if (operator === divide) {
         console.log(divide(a, b));
-    } else { console.log('whoops - i\m getting curious'); }
+    }
+    else {
+        console.log('whoops - i\m getting curious');
+    }
 }
 
-operate(add, 10, 10);
-operate(subtract, 10, 10);
-operate(multiply, 10, 10);
-operate(divide, 10, 10);
+// operate(add, 10, 10);
+// operate(subtract, 10, 10);
+// operate(multiply, 10, 10);
+// operate(divide, 10, 10);
+
+function test() {
+    console.log('test worked');
+}
+// test();
